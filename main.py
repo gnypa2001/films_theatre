@@ -18,4 +18,9 @@ def horrors():
 def comedy():
     return render_template("comedy.html")
 
+@app.route('/action')
+def action():
+    return render_template("action.html")
+
+
 app.run(debug=True)

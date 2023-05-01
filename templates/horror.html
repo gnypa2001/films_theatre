@@ -193,11 +193,11 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/1965px-Warner_Bros_logo.svg.png" alt="Warner Bros Logo" style="width: 100px; height: 100px;">
         <nav>
             <ul>
-                <button type="button">Все фильмы</button>
-                <button type="button">Хоррор</button>
-                <button type="button">Экшн</button>
-                <button type="button">Комедия</button>
-                <button type="button">О нас</button>
+                <button type="button"><a href="{{ url_for('all_films') }}">Все фильмы</a></button>
+                <button type="button"><a href="{{ url_for('horrors') }}">Хоррор</a></button>
+                <button type="button"><a href="{{ url_for('action') }}">Экшн</a></button>
+                <button type="button"><a href="{{ url_for('comedy') }}">Комедия</a></button>
+                <button type="button"><a href="{{ url_for('horrors') }}">О нас</a></button>
             </ul>
         </nav>
     </header>

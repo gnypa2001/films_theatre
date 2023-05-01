@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Typography */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            background-image: url('https://www.rollingstone.com/wp-content/uploads/2021/06/ACTION-FMOIVES_WEB-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header, main {
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+    
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2rem;
+          }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding:  5px;
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+        }
+
+        .movie {
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            overflow: hidden;
+          }
+
+        .movie:hover {
+            box-shadow: 0 0 5px #333;
+            transform: translateY(-5px);
+        }
+
+        .movie img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .movie .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        .movie .description {
+            padding: 10px;
+            text-align: justify;
+          }
+        
+        .movie .button-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #f1f1f1;
+          }
+        
+          .movie button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+          
+          .movie button:hover {
+            background-color: #0056b3;
+          }
+        .title {
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #000000;
+        }
+
+        .description {
+            padding: 1rem;
+            background-color: #f2f2f2;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin-right:5px
+        }
+            
+        button:hover {
+            background-color: #ffd700;
+            color: #333;
+        }
+</style>
+</head>
+<body>
+    
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Warner_Bros_logo.svg/1965px-Warner_Bros_logo.svg.png" alt="Warner Bros Logo" style="width: 100px; height: 100px;">
+        <nav>
+            <ul>
+                <button type="button">Все фильмы</button>
+                <button type="button">Хоррор</button>
+                <button type="button">Экшн</button>
+                <button type="button">Комедия</button>
+                <button type="button">О нас</button>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="movie">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Action_Tamil_Film.jpg" alt="Action Tamil Film">
+        <div class="title">Action Tamil Film</div>
+     </div>
+    <div class="movie">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/08/X-Men_Origins_Wolverine_theatrical_poster.jpg" alt="X-Men Origins: Wolverine">
+        <div class="title">X-Men Origins: Wolverine</div>
+    </div>
+    <div class="movie">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/TF2SteelPoster.jpg" alt="Team Fortress 2">
+        <div class="title">Team Fortress 2</div>
+        <div class="description">Trnasformers</div>
+        
+    </div>
+    <div class="movie">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Universal_soldier_regeneration_poster.jpg" alt="Universal Soldier: Regeneration">
+        <div class="title">Universal Soldier: Regeneration</div>
+
+    </div>
+</main>
+
+
+<footer>
+    <p>&copy; 2023 My Company. All rights reserved.</p>
+</footer>
+</body>
+</html> 

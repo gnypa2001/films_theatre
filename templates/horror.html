@@ -205,27 +205,15 @@
         </nav>
     </header>
 <main>
+    {%for film in spisok%}
+    {%if film.genre == "horror"%}
     <div class="movie">
-        <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/Scary_Stories_to_Tell_in_the_Dark_film_logo.jpg" alt="Scary Stories to Tell in the Dark">
-        <div class="title">Scary Stories to Tell in the Dark</div>
-     </div>
-    <div class="movie">
-        <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Annihilation_%28film%29.png" alt="Annihilation">
-        <div class="title">Annihilation</div>
+        <img src = "{{film.link}}" alt = "{{film.name}}">
+        <div class="title">{{film.name}}</div>
     </div>
-    <div class="movie">
-        <img src="https://upload.wikimedia.org/wikipedia/en/3/39/Puppet_Master%3B_The_Littlest_Reich_%282018%29_poster.jpg" alt="Puppet Master: The Littlest Reich">
-        <div class="title">Puppet Master: The Littlest Reich</div>
-        <div class="description">Trnasformers</div>
-        
-    </div>
-    <div class="movie">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/97/The_Predator_official_poster.jpg" alt="The Predator">
-        <div class="title">The Predator</div>
-
-    </div>
+    {%endif%}
+    {% endfor %}
 </main>
-
 
 <footer>
     <p>&copy; 2023 My Company. All rights reserved.</p>

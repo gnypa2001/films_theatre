@@ -205,25 +205,14 @@
         </nav>
     </header>
 <main>
+    {%for film in spisok%}
+    {%if film.genre == "action"%}
     <div class="movie">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Action_Tamil_Film.jpg" alt="Action Tamil Film">
-        <div class="title">Action Tamil Film</div>
-     </div>
-    <div class="movie">
-        <img src="https://upload.wikimedia.org/wikipedia/en/0/08/X-Men_Origins_Wolverine_theatrical_poster.jpg" alt="X-Men Origins: Wolverine">
-        <div class="title">X-Men Origins: Wolverine</div>
+        <img src = "{{film.link}}" alt = "{{film.name}}">
+        <div class="title">{{film.name}}</div>
     </div>
-    <div class="movie">
-        <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/TF2SteelPoster.jpg" alt="Team Fortress 2">
-        <div class="title">Team Fortress 2</div>
-        <div class="description">Trnasformers</div>
-        
-    </div>
-    <div class="movie">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Universal_soldier_regeneration_poster.jpg" alt="Universal Soldier: Regeneration">
-        <div class="title">Universal Soldier: Regeneration</div>
-
-    </div>
+    {%endif%}
+    {% endfor %}
 </main>
 
 

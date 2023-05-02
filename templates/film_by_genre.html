@@ -206,13 +206,11 @@
     </header>
 <main>
     {%for film in spisok%}
-    {%if film.genre == "action"%}
     <div class="movie">
         <img src = "{{film.link}}" alt = "{{film.name}}">
         <div class="title">{{film.name}}</div>
         <div class="description">{{film.descr}}</div>
     </div>
-    {%endif %}
     {% endfor %}
 </main>
 

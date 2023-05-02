@@ -1,0 +1,62 @@
+{
+    "Action Tamil Film": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/a/a4/Action_Tamil_Film.jpg",
+        "descr": "",
+        "genre": "action"
+    },
+    "X-Men Origins: Wolverine": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/0/08/X-Men_Origins_Wolverine_theatrical_poster.jpg",
+        "descr": "",
+        "genre": "action"
+    },
+    "Transformers": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/c/cb/TF2SteelPoster.jpg",
+        "descr": "Trnasformers",
+        "genre": "action"
+    },
+    "Universal Soldier: Regeneration": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/a/a3/Universal_soldier_regeneration_poster.jpg",
+        "descr": "",
+        "genre": "action"
+    },
+    "Trailer Park Boys: Don't Legalize It": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/1/14/TrailerParkBoys3.jpg",
+        "descr": "",
+        "genre": "comedy"
+    },
+    "Deadpool": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/2/23/Deadpool_%282016_poster%29.png",
+        "descr": "",
+        "genre": "comedy"
+    },
+    "Grimsby": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/1/1b/The_Brothers_Grimsby_poster.png",
+        "descr": "Trnasformers",
+        "genre": "comedy"
+    },
+    "Dead Snow 2: Red vs. Dead": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/f/f3/Deadsnow2poster.jpg",
+        "descr": "",
+        "genre": "comedy"
+    },
+    "Scary Stories to Tell in the Dark": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/d/dd/Scary_Stories_to_Tell_in_the_Dark_film_logo.jpg",
+        "descr": "",
+        "genre": "horror"
+    },
+    "Annihilation": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/f/f6/Annihilation_%28film%29.png",
+        "descr": "",
+        "genre": "horror"
+    },
+    "Puppet Master: The Littlest Reich": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/3/39/Puppet_Master%3B_The_Littlest_Reich_%282018%29_poster.jpg",
+        "descr": "Trnasformers",
+        "genre": "horror"
+    },
+    "The Predator": {
+        "link": "https://upload.wikimedia.org/wikipedia/en/9/97/The_Predator_official_poster.jpg",
+        "descr": "",
+        "genre": "horror"
+    }
+}

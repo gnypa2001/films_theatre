@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+import json
 app = Flask("Film theatre")
 
 @app.route('/')
@@ -8,6 +8,7 @@ def main_page():
 
 @app.route('/all_films')
 def all_films():
+   
     return render_template("all_films.html")
 
 @app.route('/horror')

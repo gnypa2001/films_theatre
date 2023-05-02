@@ -1,12 +1,14 @@
 from flask import Flask, render_template
 import json
+from film import Film
 app = Flask("Film theatre")
+
 def get_spisok():
     with open("films.json", "r") as file:
         temp = json.load(file)
     spisok = []
     for name in temp:
-        spisok.append(name, temp[name]['descr'], temp[name]['link'], temp[name]['genre'])
+        spisok.append(Film(name, temp[name]['link'], temp[name]['descr'], temp[name]['genre']))
     return spisok
 @app.route('/')
 def main_page():

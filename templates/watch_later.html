@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Films</title>
+    <title>My Web Page</title>
     <link rel = "stylesheet" type="text/css" href="{{ url_for('static', filename='css/film_by_genre.css') }}"/>
 </head>
 <body>
@@ -30,17 +30,10 @@
     </header>
 <main>
     {%for film in spisok%}
-    <div class="movie">    
+    <div class="movie">
         <img src = "{{film.link}}" alt = "{{film.name}}">
         <div class="title">{{film.name}}</div>
         <div class="description">{{film.descr}}</div>
-        <div class="button-container">
-            <button type="button">Watch Now</button>
-            <form action = "/watch" method="POST">
-                <input name="film_name" type="hidden" value="{{film.name}}"/>
-                <button>Add to Watchlist</button>
-            </form>
-        </div>
     </div>
     {% endfor %}
 </main>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
-    <link rel = "stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}"/>
+    <link rel = "stylesheet" type="text/css" href="{{ url_for('static', filename='css/register.css') }}"/>
 </head>
 <body>
     
@@ -19,20 +19,20 @@
               <a href="{{ url_for('comedy') }}"><button type="button">Комедия</button></a>
               <a href="{{ url_for('watch_later') }}"><button type="button">Смотреть позже</button></a>
               <a href="{{ url_for('main_page') }}"><button type="button">О нас</button></a>
-              {%if log == "log-in"%}
-                <a href="{{ url_for('registration') }}"><button type="button">Регистрация</button></a>
-                <a href="{{ url_for('login') }}"><button type="button">Логин</button></a>
-              {%else%}
-                <a href="{{ url_for('main_page') }}"><button type="button">{{log}}</button></a>
-                <a href="{{ url_for('logout') }}"><button type="button">Выход</button></a>
-              {%endif%}
-              
+              <a href="{{ url_for('watch_later') }}"><button type="button">Логин</button></a>
             </ul>
         </nav>
     </header>
 <main>
-    <h1>Лучший сайт филмов</h1>
-    <p>Вот такой сайтик</p>
+    <form action = "/register_validation" method="POST">
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username">
+    
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+    
+        <input type="submit" value="Войти">
+      </form>
 </main>
 <footer>
     <p>&copy; 2023 My Company. All rights reserved.</p>

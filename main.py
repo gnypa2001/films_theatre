@@ -31,7 +31,7 @@ def watch_later():
         return render_template("watch_later.html", log = request.cookies.get("login"), spisok = spisok)
     
     return render_template("watch_later.html", log = "log-in", spisok = spisok)
-    
+
 
 @app.route('/register')
 def registration():
@@ -49,7 +49,7 @@ def register_validation():
         json.dump(temp, file, indent=4)
         
     return redirect(url_for('main_page'))
-        
+
 @app.route('/login')
 def login():
     return render_template("login.html")
@@ -117,9 +117,7 @@ def action():
 def logout():
     resp = make_response(redirect(url_for("main_page")))
     resp.set_cookie("login", "log-in")
+    resp.delete_cookie('watch_later')
     return resp
-   
+
 app.run(debug=True)
-
-
-#resp.delete_cookie('login')

@@ -18,6 +18,14 @@ body {
 header, main {
     text-align: center;
 }
+header img {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+nav {
+    order: 1;
+}
 
 h1, h2, h3 {
     font-weight: bold;
@@ -54,9 +62,14 @@ header {
     padding: 1rem 0;
 }
 
+
 nav ul {
     display: flex;
     list-style: none;
+    float: left;
+}
+img {
+    order: 2;
 }
 
 nav li {
